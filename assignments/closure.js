@@ -1,9 +1,21 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
 
+myNameIs();
+
+function myNameIs() {
+  const firstName = 'Jeff';
+  // lastName is NOT available out here
+
+  sayHello();
+  function sayHello() {
+    const lastName = 'Oliver';
+
+    console.log(`Hi, my name is ${firstName} ${lastName}`);
+  }
+}
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
-
 
 // ==== Challenge 2: Create a counter function ====
 const counter = () => {
